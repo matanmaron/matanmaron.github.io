@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matan Maron Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="profile">
+        <img src="your-photo.jpg" alt="Matan Maron" class="profile-pic">
+        <p class="bio">Game Developer & Designer</p>
+    </div>
+    <nav class="links">
+        <a href="cv.pdf" target="_blank">CV</a>
+        <a href="https://github.com/matanmaron" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/matanmaron" target="_blank">LinkedIn</a>
+    </nav>
+</header>
+
+<!-- Tabs -->
+<nav class="tabs">
+    <button class="tab-btn active" data-tab="professional">Professional</button>
+    <button class="tab-btn" data-tab="school">School</button>
+    <button class="tab-btn" data-tab="personal">Personal</button>
+    <button class="tab-btn" data-tab="maronbytes">MaronBytes</button>
+</nav>
+
+<!-- Content -->
+<section class="tab-content">
+
+    <!-- Professional Games -->
+    <div class="tab-panel active" id="professional">
+        <div class="game-grid">
+            <div class="game">
+                <a href="https://github.com/username/game1" target="_blank">
+                    <img src="images/game1.gif" alt="Game 1">
+                    <p>Game 1</p>
+                </a>
+            </div>
+            <div class="game">
+                <a href="https://github.com/username/game2" target="_blank">
+                    <img src="images/game2.gif" alt="Game 2">
+                    <p>Game 2</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- School Games -->
+    <div class="tab-panel" id="school">
+        <div class="game-grid">
+            <div class="game">
+                <a href="https://github.com/username/school1" target="_blank">
+                    <img src="images/school1.gif" alt="School Game 1">
+                    <p>School Game 1</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Personal Games -->
+    <div class="tab-panel" id="personal">
+        <div class="game-grid">
+            <div class="game">
+                <a href="https://github.com/username/personal1" target="_blank">
+                    <img src="images/personal1.gif" alt="Personal Game 1">
+                    <p>Personal Game 1</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MaronBytes Studio -->
+    <div class="tab-panel" id="maronbytes">
+        <p>MaronBytes is my indie studio. Currently working on new releases.</p>
+        <h3>Tools:</h3>
+        <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Photoshop</li>
+            <li>Blender</li>
+        </ul>
+    </div>
+
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
