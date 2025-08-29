@@ -117,15 +117,28 @@ header {
 
 /* Tab content */
 .tab-content {
-    padding: 2rem;
+    position: relative;
+    min-height: 400px; /* adjust for your tallest tab */
 }
 
 .tab-panel {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none; /* prevent clicks when hidden */
+
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .tab-panel.active {
-    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    position: relative; /* so active one flows normally */
 }
 
 .game-grid {
