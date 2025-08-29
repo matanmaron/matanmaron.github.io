@@ -119,8 +119,9 @@ header {
 
 /* Common Tab Content */
 .tab-content {
-    position: relative;
-    min-height: 400px;
+    position: relative;   /* relative container for absolute panels */
+    min-height: 400px;    /* or whatever your tallest tab needs */
+    overflow: hidden;     /* prevents extra scroll from tall tabs */
 }
 
 .tab-panel {
