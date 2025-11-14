@@ -125,3 +125,18 @@ header {
 .tab-panel {
     min-height: auto;
 }
+
+/* Mobile override for the exophase badge */
+.exophase {
+    position: static !important; /* follows document flow under top-links */
+    margin: 0.5rem auto 1rem auto; /* small top, centered, extra bottom spacing */
+    display: block;
+    text-align: center;
+    width: auto;
+}
+
+.exophase img {
+    height: auto;
+    display: inline-block;
+    padding: 12px 0; /* smaller padding for mobile */
+}

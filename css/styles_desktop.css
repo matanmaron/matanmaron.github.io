@@ -53,3 +53,16 @@
     height: 500px;
     border-radius: 50%;
 }
+
+.exophase {
+    position: absolute;
+    right: 2rem;
+    top: 5rem;        /* pushes it below top-links */
+    display: block;
+}
+
+.exophase img {
+    height: auto;
+    display: block;
+    padding-bottom: 10px;
+}
